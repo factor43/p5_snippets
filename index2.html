@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 75%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<body>
+  <!-- HEADER -->
+ 
+<!-- Header -->
+<div class="header">
+  <img src="_images/factor43_logo.png" >
+  <h2>Experimental <a href="https://p5js.org/">p5.js</a> sketches & snippets</h2>
+  
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href="grass01">
+      <div class="container" style="width:100%">
+        <img src="_images/grass01.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Creative coding, data visualization & random snippets</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="grid01">
+      <div class="container" style="width:100%">
+        <img src="_images/grid01.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Turbulence, Noise and a Flare</p>
+            <p>Combining basic procedural texture techniques for more realistic looking surfaces</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="grid02">
+      <div class="container" style="width:100%">
+        <img src="_images/grid02.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="vline_timetable">
+      <div class="container" style="width:100%">
+        <img src="_images/vline_timetable.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>  
+  </div>
+
+  <div class="column">
+    <a href="ring02">
+      <div class="container" style="width:100%">
+        <img src="_images/ring02.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="irregular_grid01">
+      <div class="container" style="width:100%">
+        <img src="_images/irregular_grid01.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>  
+    <a href="wavy02">
+      <div class="container" style="width:100%">
+        <img src="_images/wavy02.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>  
+    <a href="wavy03">
+      <div class="container" style="width:100%">
+        <img src="_images/wavy03.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>  
+  </div>
+
+  <div class="column">
+    <a href="ring03">
+      <div class="container" style="width:100%">
+        <img src="_images/ring03.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="random_walk">
+      <div class="container" style="width:100%">
+        <img src="_images/random_walk.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="handdrawn02">
+      <div class="container" style="width:100%">
+        <img src="_images/handdrawn02.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="column">
+    <a href="grass02">
+      <div class="container" style="width:100%">
+        <img src="_images/grass02.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Creative coding, data visualization & random snippets</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="handdrawn03">
+      <div class="container" style="width:100%">
+        <img src="_images/handdrawn03.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+    <a href="handdrawn04">
+      <div class="container" style="width:100%">
+        <img src="_images/handdrawn04.png" class="image" >
+        <div class="overlay">
+          <div class="text"><p>Randomised 3D offset cubes</p></div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

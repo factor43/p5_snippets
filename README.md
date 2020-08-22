@@ -1,2 +1,3 @@
-# p5_snippets
-Initial sketch
+
+
+Text can be **bold**, _italic_, or ~~strikethrough~~.
